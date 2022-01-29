@@ -4,4 +4,4 @@
 </div>
 <h3 align="center">Distro: EndeavourOS | WM: i3-gaps | Color Scheme: TokyoNight</h3>
 
-<h2 align="right">Screenshots</h2>
+<h2 align="right">Left</h2>
