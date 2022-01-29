@@ -12,3 +12,5 @@
 <h2 align="left">Wallpaper</h2>
 <img src="https://i.imgur.com/bzTqkqV.png" align="center">
 <p align="left">More wallpapers in folder: Picture</p>
+
+<h2 align="left">Info</h2>
