@@ -5,3 +5,4 @@
 <h3 align="center">Distro: EndeavourOS | WM: i3-gaps | Color Scheme: TokyoNight</h3>
 
 <h1 align="left">Screenshots</h1>
+<img src="https://imgur.com/UL9UvjO" align="center">
