@@ -4,7 +4,7 @@
 </div>
 <h3 align="center">Distro: EndeavourOS | WM: i3-gaps | Color Scheme: TokyoNight</h3>
 
-<h1 align="left">Screenshots</h1>
+<h2 align="left">Screenshots</h2>
 <img src="https://i.imgur.com/3Vn5BYb.png" align="center">
 <img src="https://i.imgur.com/JSdOm9u.png" align="center">
 <img src="https://i.imgur.com/Xr92lAI.png" align="center">
