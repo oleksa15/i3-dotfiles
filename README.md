@@ -1,7 +1,1 @@
-# sause dots
-
-## Wallpapers
-
-## Screenshots
-
-## Info
+<h1 align="center">sause dots</h1>
