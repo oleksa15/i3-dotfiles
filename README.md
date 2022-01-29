@@ -16,3 +16,4 @@
 <h2 align="left">Info</h2>
 <h4> Fonts : Awesome Font , Terminus Font </h4>
 <h4> Firefox css theme based on <a href="https://github.com/Tnings/CompactFox">CompactFox</a>
+<h4> Spotify theme : <a href="https://github.com/NYRI4/Comfy-spicetify">Comfy-spotify</a>
