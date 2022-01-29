@@ -1,0 +1,173 @@
+
+#   ____             __ _  sad_sause² 
+#  / ___|___  _ __  / _(_) __ _ ___ 
+# | |   / _ \| '_ \| |_| |/ _` / __|
+# | |__| (_) | | | |  _| | (_| \__ \
+#  \____\___/|_| |_|_| |_|\__, |___/
+#                         |___/         
+
+
+
+# Font 
+        font pango: terminus 14
+
+ # Set win button   
+        set $mod Mod4
+
+# Some Binds to moving
+        set $left h
+        set $down j
+        set $up k
+        set $right l
+
+# Set default terminal
+        set $kitty st-256color
+
+# Autofocus on hover, also when switching workspaces
+        focus_follows_mouse yes
+
+# Borders and removing title
+        for_window [class="^.*"] border pixel 0
+        default_border pixel 0
+        default_floating_border pixel 0
+
+# Colors
+        client.focused           #9aa5ce #364A82 #c0caf5 #9aa5ce   #9aa5ce
+        client.focused_inactive  #16161d #16161d #c0caf5 #16161d   #16161d
+        client.unfocused         #16161d #16161d #c0caf5 #16161d   #16161d
+
+# Gaps
+        gaps inner 5
+        gaps outer 2
+        gaps top 2
+        gaps bottom 2
+
+# Rofi d-menu
+        bindsym $mod+d exec rofi -no-config -no-lazy-grab -show drun -modi drun -theme /home/oleksa/.config/rofi/launcher.rasi
+
+# Set second monitor position
+        exec  xrandr --output HDMI1 --mode 1920x1080 --pos 1920x0
+
+# Set wallpaper
+        exec --no-startup-id feh --bg-fill /home/oleksa/Изображения/Wallpapers/Wallpaper_24.jpg
+
+# Start terminal & firefox
+        bindsym $mod+Return exec kitty
+        bindsym $mod+w exec firefox
+
+# Switch workspace to another monitor
+        bindsym $mod+Shift+h move workspace to output left
+        bindsym $mod+Shift+j move workspace to output down
+        bindsym $mod+Shift+k move workspace to output up
+        bindsym $mod+Shift+l move workspace to output right
+
+# Close window
+        bindsym $mod+q kill
+
+# Enable floating modifi
+        floating_modifier $mod
+
+# Reload i3 config
+        bindsym $mod+Shift+c reload
+
+# Restart/Exit from sys
+        bindsym $mod+Shift+r restart
+        bindsym $mod+Shift+e exit
+
+# Switching in workspace
+        bindsym $mod+1 workspace number 1
+        bindsym $mod+2 workspace number 2
+        bindsym $mod+3 workspace number 3
+        bindsym $mod+4 workspace number 4
+        bindsym $mod+5 workspace number 5
+        bindsym $mod+6 workspace number 6
+        bindsym $mod+7 workspace number 7
+        bindsym $mod+8 workspace number 8
+        bindsym $mod+9 workspace number 9
+        bindsym $mod+0 workspace number 10
+
+# Move focused container to workspace
+        bindsym $mod+Shift+1 move container to autotiling &workspace number 1
+        bindsym $mod+Shift+2 move container to workspace number 2
+        bindsym $mod+Shift+3 move container to workspace number 3
+        bindsym $mod+Shift+4 move container to workspace number 4
+        bindsym $mod+Shift+5 move container to workspace number 5
+        bindsym $mod+Shift+6 move container to workspace number 6
+        bindsym $mod+Shift+7 move container to workspace number 7
+        bindsym $mod+Shift+8 move container to workspace number 8
+        bindsym $mod+Shift+9 move container to workspace number 9
+        bindsym $mod+Shift+0 move container to workspace number 10
+
+# on/off floating
+        bindsym $mod+f floating toggle
+
+# Audio change
+        bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+        bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+        bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+        bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+# Brightness change
+        bindsym XF86MonBrightnessDown exec light -U 5
+        bindsym XF86MonBrightnessUp exec light -A 5
+
+# Resizing
+    mode "resize" {
+            bindsym h resize shrink width 10 px or 10 ppt
+            bindsym j resize grow height 10 px or 10 ppt
+            bindsym k resize shrink height 10 px or 10 ppt
+            bindsym l resize grow width 10 px or 10 ppt
+
+
+            bindsym Return mode "default"
+            bindsym Escape mode "default"
+            bindsym $mod+r mode "default"
+        }
+
+# Off/on resizing
+    bindsym $mod+r mode "resize"
+
+# Pin programms to workspaces
+        assign [class="kitty"] → number 1
+        assign [class="Pamac"] → number 1
+        assign [class="firefox"] → number 2
+        assign [class="Code"] → number 4
+        assign [class="Sublime"] → number 4
+        assign [class="discord"] → number 5
+        assign [class="Telegram"] → number 5
+        assign [class="Slack"] → number 5
+        assign [class="Spotify"] → number 6
+        assign [class="Nautilus"] → number 3
+        assign [class="figma-linux"] → number 7
+        assign [class="Gimp"] → number 7
+        assign [class="Zathura"] → number 8
+
+# Again pin:)
+        for_window [class="discord"] move to workspace number 5
+        for_window [class="Spotify"] move to workspace number 6
+
+# Windows with floating
+        for_window [class="gnome-(calendar|calculator|power-statistics|control-center)"] floating enable
+        for_window [class="Pamac"] floating enable
+        for_window [class="pamac"] floating enable
+        for_window [class="discord"] floating enable
+        for_window [class="Telegram"] floating enable
+        for_window [class="Slack"] floating enable
+        for_window [class="Nautilus"] floating enable
+
+# Some autosart
+        exec --no-startup-id nm-applet &
+        exec --no-startup-id kalu &
+        exec --no-startup-id autotiling &
+        exec --no-startup-id flameshot
+
+# Start polybar & Picom
+        exec_always --no-startup-id bash /home/oleksa/.config/polybar/launch.sh --grayblocks
+        exec_always picom --config /home/oleksa/.config/picom/picom.conf
+# Add language
+
+        exec_always "setxkbmap -model pc104 -layout us,ua,ru -variant ,, -option grp:alt_shift_toggle"
+
+#Cursor
+        exec_always --no-startup-id xsetroot -cursor_name left_ptr
+

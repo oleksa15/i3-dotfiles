@@ -1,0 +1,19 @@
+{
+	"changeLogs": {
+		"BDFDB": "2.0.5",
+		"CreationDate": "1.4.6",
+		"GameActivityToggle": "1.0.4"
+	},
+	"choices": {
+		"toastPosition": "right"
+	},
+	"general": {
+		"showToasts": true,
+		"showSupportBadges": true,
+		"useChromium": false
+	},
+	"hashes": {
+		"0BDFDB.data.json": "a485715019970a30abc55c2a0b8f00bf3240974a",
+		"0BDFDB.raw.css": "a1036e10077b9457f3903795204f7dbd91d7646d"
+	}
+}
