@@ -14,3 +14,5 @@
 <p align="left">More wallpapers in folder: Picture</p>
 
 <h2 align="left">Info</h2>
+<h4> Fonts : Awesome Font , Terminus Font </h4>
+<h4> Firefox css theme based on <a href="https://github.com/Tnings/CompactFox">CompactFox</a>
