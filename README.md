@@ -6,3 +6,5 @@
 
 <h1 align="left">Screenshots</h1>
 <img src="https://i.imgur.com/3Vn5BYb.png" align="center">
+<img src="https://i.imgur.com/JSdOm9u.png" align="center">
+<img src="https://i.imgur.com/3Vn5BYb.png" align="center">
