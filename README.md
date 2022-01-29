@@ -8,3 +8,6 @@
 <img src="https://i.imgur.com/3Vn5BYb.png" align="center">
 <img src="https://i.imgur.com/JSdOm9u.png" align="center">
 <img src="https://i.imgur.com/Xr92lAI.png" align="center">
+
+<h2 align="left">Wallpaper</h2>
+<img src="https://i.imgur.com/3Vn5BYb.png" align="center">
