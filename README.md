@@ -10,4 +10,5 @@
 <img src="https://i.imgur.com/Xr92lAI.png" align="center">
 
 <h2 align="left">Wallpaper</h2>
-<img src="https://i.imgur.com/bzTqkqV.png" alt="More wallpapers in folder: Picture"align="center">
+<img src="https://i.imgur.com/bzTqkqV.png" align="center">
+<p align="left">More wallpapers in folder: Picture</p>
