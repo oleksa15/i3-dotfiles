@@ -16,4 +16,3 @@
 <h2 align="left">Info</h2>
 <h4> Fonts : Awesome Font , Terminus Font </h4>
 <h4> Firefox css theme based on <a href="https://github.com/Tnings/CompactFox">CompactFox</a>
-<h4> For polybar working first instlall <a href="https://github.com/adi1090x/polybar-themes">polybar-themes</a> than paste my grayblock folder to polybar-themes</h4> 
